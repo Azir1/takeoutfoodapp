@@ -1,0 +1,5 @@
+const express = require('express')
+const app = express()
+const list = require('./route/list')
+app.use('/product',list)
+app.listen(3000)

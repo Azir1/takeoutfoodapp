@@ -5,7 +5,6 @@
   left-text="返回"
   left-arrow
   @click-left="onClickLeft"
-  @click-right="onClickRight"
 />
   </div>
 </template>
@@ -16,7 +15,12 @@ export default {
   components:{
     [NavBar.name]:NavBar
   },
-  props:['title']
+  props:['title'],
+  methods: {
+    onClickLeft(){
+
+    }
+  },
 }
 </script>
 
