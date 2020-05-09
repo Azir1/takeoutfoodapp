@@ -1,12 +1,21 @@
 <template>
   <div>
-    cart
+   <TopBar title='购物车'></TopBar>
+   <List></List>
+   <BottomBar></BottomBar>
   </div>
 </template>
 
 <script>
+import TopBar from '@/components/topbar/topbar'
+import List from '@/components/list/list'
+import BottomBar from '@/components/bottombar/bottombar'
 export default {
-  
+  components:{
+    List,
+    BottomBar,
+    TopBar
+  }
 }
 </script>
 

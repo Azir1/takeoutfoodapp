@@ -10,6 +10,6 @@ export default new VueRouter({
     { name: 'cart', path: '/cart', component: () => import('@/pages/cart/cart') },
     { name: 'user', path: '/user', component: () => import('@/pages/user/user') },
     { name: 'sort', path: '/sort', component: () => import('@/pages/sort/sort') },
-    { path: '*', redirect: '/detail' }
+    { path: '*', redirect: '/home' }
   ]
 })
