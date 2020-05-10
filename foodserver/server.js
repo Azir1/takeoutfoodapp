@@ -1,5 +1,7 @@
 const express = require('express')
 const app = express()
+const cart = require('./route/cart')
 const list = require('./route/list')
 app.use('/product',list)
+app.use('/user',cart)
 app.listen(3000)

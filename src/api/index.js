@@ -1,5 +1,7 @@
-const URL = '/api'
+const URL = '/api/'
 
 export const api = {
-  list: URL + '/product/list'
+  list: URL + 'product/list',
+  cart: URL + 'user/cart',
+  cartlist:URL+'user/userlist'
 }

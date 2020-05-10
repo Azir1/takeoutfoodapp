@@ -1,12 +1,10 @@
 <template>
   <div>
-    <div v-for="(v,i) in list" :key='i'>
+    <div v-for="(v,i) in list" :key='i' @click='fn(v.id)'>
       <van-card
-        num="2"
-        price="2.00"
-        desc="描述信息"
-        title="商品标题"
-        thumb="https://img.yzcdn.cn/vant/ipad.jpeg"
+        :price=v.price
+        :title=v.title
+        :thumb=v.imgpath
       />
     </div>
   </div>
@@ -18,7 +16,13 @@ export default {
   components: {
     [Card.name]: Card
   },
-  props: ["list"]
+  props: ["list"],
+  methods: {
+    fn(i){
+      this.$store.commit('setId',i)
+      this.$router.push('/detail')
+    }
+  },
 };
 </script>
 

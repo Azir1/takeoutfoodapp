@@ -22,7 +22,6 @@ export default {
       method:'get',
       url:api.list
     }).then(ok=>{
-      console.log(ok.data.data[0].data)
       this.list = ok.data.data[0].data
     })
   },

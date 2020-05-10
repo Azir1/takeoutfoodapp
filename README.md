@@ -14,3 +14,6 @@
 7. 引用axios
 
 8. 搭建后台 npm i -S express express-router mongoose 
+主要：必须先打开robo 3t链接数据库，然后启动后台服务
+
+9. vuex组件传参  npm i -S vuex

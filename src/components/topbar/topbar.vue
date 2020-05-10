@@ -18,7 +18,7 @@ export default {
   props:['title'],
   methods: {
     onClickLeft(){
-
+      this.$router.back(-1)
     }
   },
 }
@@ -34,10 +34,8 @@ export default {
 }
 .van-nav-bar__text{
   color: #fff;
-  font-size: .18rem;
 }
 .van-nav-bar .van-icon{
   color: #fff;
-
 }
 </style>
